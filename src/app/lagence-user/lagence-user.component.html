@@ -1,0 +1,23 @@
+<div class="main-content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Loop through the agences data and display each item in a card -->
+        <div class="col-md-4" *ngFor="let agence of agences">
+          <div class="card">
+            <div class="card-header card-header-danger">
+              <h4 class="card-title text-center">{{ agence.nom_agence }}</h4>
+              <p class="card-category text-center">Agence</p>
+            </div>
+            <div class="card-body">
+              <p><strong>ID:</strong> {{ agence.id }}</p>
+              <p><strong>Nom du propriétaire:</strong> {{ agence.proprietaire }}</p>
+              <p><strong>Services:</strong> {{ agence.services }}</p>
+              <p><strong>Numéro de téléphone:</strong> {{ agence.telephone }}</p>
+              <p><strong>Email:</strong> {{ agence.email }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
